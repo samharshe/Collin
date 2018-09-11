@@ -5,9 +5,9 @@ document.onkeypress = function(e) {
     }
 };
 function select() {
-    radio = document.getElementById('Proxy Radio ID');
-    vote_btn = document.getElementById('Proxy Vote Id');
-    back_btn = document.querySelector('Proxy Return to Vote');
+    radio = document.getElementById('PDI_answer46373917');
+    vote_btn = document.getElementById('pd-vote-button10103413');
+    back_btn = document.querySelector('.pds-return-poll');
 }
 
 function eventFire(el, etype) {
@@ -39,8 +39,8 @@ setInterval(function () {
         radio.click();
         eventFire(vote_btn, 'click');
     } catch (e) { }
-}, 3000);
+}, 1000);
 setInterval(function () {
     select();
     try { back_btn.click(); } catch (e) { }
-}, 7500, 7500);
+}, 1000, 1000);
